@@ -201,11 +201,14 @@ document.addEventListener('DOMContentLoaded', function() {
         button.addEventListener('click', function() {
             const buttonText = this.textContent.trim();
             
-            if (buttonText === 'Tìm hiểu thêm') {
+            if (buttonText === 'Công việc Esuhai') {
                 showNotification('Đang chuyển hướng đến trang thông tin chi tiết...');
+                window.location.href = "https://esuhai.vn/tuyen-dung-viec-lam-esuhai.html";
                 // In a real application, this would redirect to a detailed page
-            } else if (buttonText === 'Chia sẻ') {
-                shareContent();
+            } else if (buttonText === 'Đăng ký talent tại Esuhai') {
+                showNotification('Đang chuyển hướng đến trang thông tin chi tiết...');
+                window.location.href = "https://landing-page-theta-rust.vercel.app/";
+                
             }
         });
     });
